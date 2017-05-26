@@ -18,7 +18,7 @@ Connect to the container and use netcat to check the server
 docker run -it `docker ps -aqf "name=memcached"` /bin/sh
   
 # Stats
-echo -e "stats\r\n" | nc localhost 11300
+echo -e "stats" | nc localhost 11300
 
 ```
 
